@@ -1,6 +1,8 @@
 # some beginning examples for data analysis
 
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
 number_list = [1, 45, 99, 4.3]
 string_list = ["a", "d", "something", "else"]
@@ -56,3 +58,28 @@ np.arange(3, 12)
 np.arange(3, 28, 3)
 
 ######################################
+# Data Frames
+fruit_dictionary = {"apples" : 3.49,
+                    "bananas" : 1.79,
+                    "strawberries" : 5.99}
+
+fruit_names = list(fruit_dictionary.keys())
+
+fruit_data = {"fruit" : fruit_names,
+              "price" : fruit_prices}
+print(fruit_data)
+
+fruit_dataframe = pd.DataFrame(data = fruit_data)
+print(fruit_dataframe)
+
+fruit_data["price"]
+fruit_dataframe["price"]
+type(fruit_dataframe["price"])
+
+fruit_dataframe["price"] * (1 + fruit_tax)
+
+fruit_dataframe.describe()
+fruit_dataframe["price"].mean()
+fruit_dataframe["price"].min()
+fruit_dataframe["price"].max()
+
