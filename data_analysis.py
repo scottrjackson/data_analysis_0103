@@ -89,3 +89,14 @@ print(iris_dataframe)
 iris_dataframe.describe()
 
 # matplotlib basics
+print(fruit_dataframe)
+
+plt.bar(x = "fruit", height = "price", data = fruit_dataframe)
+plt.show()
+
+iris_dataframe.head()
+plt.scatter(x = "Length", y = "Width", data = iris_dataframe)
+plt.show()
+
+plt.hist("Length", data = iris_dataframe)
+plt.show()
