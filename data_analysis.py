@@ -83,3 +83,9 @@ fruit_dataframe["price"].mean()
 fruit_dataframe["price"].min()
 fruit_dataframe["price"].max()
 
+# read data from file
+iris_dataframe = pd.read_csv("iris_data.csv")
+print(iris_dataframe)
+iris_dataframe.describe()
+
+# matplotlib basics
